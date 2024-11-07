@@ -12,17 +12,17 @@ Dans une plateforme, des utilisateurs aimeraient souscrire a des services financ
 
 TECHNOLOGIES DE BASES:
 
-– Communication:  Architecture pilote par evenement cas de rabbitMq 
-– Base de donnee evenementielle: cas de  EventStore
-– Base de donne relationelle : H2 ou Mysql
-– architecture d’implementation : Spring cloud
+* Communication:  Architecture pilote par evenement cas de rabbitMq 
+* Base de donnee evenementielle: cas de  EventStore
+* Base de donne relationelle : H2 ou Mysql
+* architecture d’implementation : Spring cloud
 
 
 SERVICE DE BASES:
-– service de configuration ( service-config) 
-– service de registration ( service-registry) 
-– service d’equilibrage de charge ( service-gateway) 
-– service de tolerance de panne ( service-breaker) 
+* service de configuration ( service-config) 
+* service de registration ( service-registry) 
+* service d’equilibrage de charge ( service-gateway) 
+* service de tolerance de panne ( service-breaker) 
 
 SCENARIO:
 
