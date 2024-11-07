@@ -33,7 +33,7 @@ SCENARIO:
 ## SERVICES DE L’APPLICATION ( Fonctionnalites)
 
 ## Service d'agence: 
-• Reçoit les demandes de création de compte. 
+- Reçoit les demandes de création de compte. 
 • Transmet les demandes au service de vérification. 
 • Reçoit les réponses du service de vérification. 
 • Cree les comptes des utilisateurs dont les demandes sont valides
