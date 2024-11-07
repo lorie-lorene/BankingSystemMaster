@@ -8,27 +8,27 @@ Dans une plateforme, des utilisateurs aimeraient souscrire a des services financ
 
 – en cas de validation, le service qui  a valide la demande, enverra la reponse a l’agence en question, qui en suite se chargera de créer le compte de l’utilisateur correspondant. Le compte cree , l’utilisateur sera informe de cela a travers un service d’annonce.
 
--- en cas de declinaison, le service qui  a refuse la demande, envoyera la reponse a l’agence en question, qui en suite se chargera tranferer la reponse negative a l’utilisateur correspondant avec le motif de reuf. l’utilisateur sera informe de cela a travers un service d’annonce.
+– en cas de declinaison, le service qui  a refuse la demande, envoyera la reponse a l’agence en question, qui en suite se chargera tranferer la reponse negative a l’utilisateur correspondant avec le motif de reuf. l’utilisateur sera informe de cela a travers un service d’annonce.
 
 TECHNOLOGIES DE BASES:
---Communication:  Architecture pilote par evenement cas de rabbitMq 
---Base de donnee evenementielle: cas de  EventStore
---Base de donne relationelle : H2 ou Mysql
---architecture d’implementation : Spring cloud
+– Communication:  Architecture pilote par evenement cas de rabbitMq 
+– Base de donnee evenementielle: cas de  EventStore
+– Base de donne relationelle : H2 ou Mysql
+– architecture d’implementation : Spring cloud
 
 
 SERVICE DE BASES:
--service de configuration ( service-config) 
--service de registration ( service-registry) 
--service d’equilibrage de charge ( service-gateway) 
--service de tolerance de panne ( service-breaker) 
+– service de configuration ( service-config) 
+– service de registration ( service-registry) 
+– service d’equilibrage de charge ( service-gateway) 
+– service de tolerance de panne ( service-breaker) 
 
 SCENARIO:
 
-Un utilisateur soumet une demande de création de compte à son agence. 
-L'agence transmet cette demande à un service dédié pour vérification. 
-Le service de vérification valide ou refuse la demande. 
-L'agence informe l'utilisateur du résultat. 
+– Un utilisateur soumet une demande de création de compte à son agence. 
+– L'agence transmet cette demande à un service dédié pour vérification. 
+– Le service de vérification valide ou refuse la demande. 
+– L'agence informe l'utilisateur du résultat. 
 
 ## SERVICES DE L’APPLICATION ( Fonctionnalites)
 
