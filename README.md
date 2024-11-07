@@ -11,6 +11,7 @@ Dans une plateforme, des utilisateurs aimeraient souscrire a des services financ
 – en cas de declinaison, le service qui  a refuse la demande, envoyera la reponse a l’agence en question, qui en suite se chargera tranferer la reponse negative a l’utilisateur correspondant avec le motif de reuf. l’utilisateur sera informe de cela a travers un service d’annonce.
 
 TECHNOLOGIES DE BASES:
+
 – Communication:  Architecture pilote par evenement cas de rabbitMq 
 – Base de donnee evenementielle: cas de  EventStore
 – Base de donne relationelle : H2 ou Mysql
@@ -33,14 +34,14 @@ SCENARIO:
 ## SERVICES DE L’APPLICATION ( Fonctionnalites)
 
 ## Service d'agence: 
-- Reçoit les demandes de création de compte. 
-• Transmet les demandes au service de vérification. 
-• Reçoit les réponses du service de vérification. 
-• Cree les comptes des utilisateurs dont les demandes sont valides
-• Informe les utilisateurs du résultat. 
+– Reçoit les demandes de création de compte. 
+– Transmet les demandes au service de vérification. 
+– Reçoit les réponses du service de vérification. 
+– Cree les comptes des utilisateurs dont les demandes sont valides
+– Informe les utilisateurs du résultat. 
 ## Service de vérification: 
-• Reçoit les demandes de création de compte. 
-• Vérifie les informations fournies dans la demande. 
+– Reçoit les demandes de création de compte. 
+ * Vérifie les informations fournies dans la demande. 
 • Valide ou refuse la demande. 
 • Envoie une réponse à l'agence. 
  ## Service de notification: 
