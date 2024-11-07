@@ -48,4 +48,19 @@ SCENARIO:
 * Recoit les reponses des demandes des utilisateurs
 * Envoie des notifications aux utilisateurs (email et message broker).
 
+ ## Service de portail Utilisateur 
+* Soumission des demandes de création de compte. 
+* Reception des notifications liées à son compte. 
+* Sous-services possibles: 
+* Authentification: Gestion des identifiants et des mots de passe. 
+* Autorisation: Définition des droits d'accès de chaque utilisateur.
+## Service de Transaction
+  ### Sous-services: 
+* Dépôt: Permet à l'utilisateur de créditer son compte. 
+* Retrait: Permet à l'utilisateur de débiter son compte. 
+* Transfert: Permet à l'utilisateur d'effectuer des transferts entre ses comptes ou vers d'autres comptes. 
+* Historique: Stocke l'historique des transactions de l'utilisateur.
+
+
+
 
