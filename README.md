@@ -23,8 +23,27 @@ SERVICE DE BASES:
 -service d’equilibrage de charge ( service-gateway) 
 -service de tolerance de panne ( service-breaker) 
 
+SCENARIO:
+
+Un utilisateur soumet une demande de création de compte à son agence. 
+L'agence transmet cette demande à un service dédié pour vérification. 
+Le service de vérification valide ou refuse la demande. 
+L'agence informe l'utilisateur du résultat. 
 SERVICES DE L’APPLICATION ( Fonctionnalites)
 
-
+Service d'agence: 
+    • Reçoit les demandes de création de compte. 
+    • Transmet les demandes au service de vérification. 
+    • Reçoit les réponses du service de vérification. 
+    • Cree les comptes des utilisateurs dont les demandes sont valides
+    • Informe les utilisateurs du résultat. 
+ Service de vérification: 
+    • Reçoit les demandes de création de compte. 
+    • Vérifie les informations fournies dans la demande. 
+    • Valide ou refuse la demande. 
+    • Envoie une réponse à l'agence. 
+ Service de notification: 
+    • Recoit les reponses des demandes des utilisateurs
+    • Envoie des notifications aux utilisateurs (email et message broker).
 
 
