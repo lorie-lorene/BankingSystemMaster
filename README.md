@@ -54,6 +54,7 @@ SCENARIO:
 * Sous-services possibles: 
 * Authentification: Gestion des identifiants et des mots de passe. 
 * Autorisation: Définition des droits d'accès de chaque utilisateur.
+* retrait, depot et transfert
 ## Service de Transaction
   ### Sous-services: 
 * Dépôt: Permet à l'utilisateur de créditer son compte. 
